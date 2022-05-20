@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mymy.dao.ReplyDAO">
+	<!-- 댓글 작성 -->
+	<insert id="add">
+		INSERT INTO tbl_reply(reply, replyer, bno) VALUES(#{reply}, #{replyer}, #{bno})
+	</insert>
+	
+	<!-- 댓글 리스트 불러오기 -->
+	<select id="list" resultType="org.mymy.model.ReplyDTO">
+		SELECT * FROM tbl_reply WHERE bno=#{bno}
+	</select>
+	
+	<!-- 수정 시, 해당 댓글 내용 불러오기 -->
+	<select id="rplGet" resultType="org.mymy.model.ReplyDTO">
+		SELECT * FROM tbl_reply WHERE rno=#{rno}
+	</select>
+	
+	<!-- 댓글 수정 -->
+	<update id="modify">
+		UPDATE tbl_reply SET reply=#{reply} WHERE rno=#{rno}
+	</update>
+	
+	<!-- 댓글 삭제 -->
+	<delete id="remove">
+		delete from tbl_reply where rno=#{rno}
+	</delete>
+</mapper>

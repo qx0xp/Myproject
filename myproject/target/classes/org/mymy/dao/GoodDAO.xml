@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mymy.dao.GoodDAO">
+	<!-- 좋아요 추가 -->
+	<insert id="addGood">
+		INSERT INTO tbl_good(memberId, bno) VALUES(#{memberId}, #{bno})
+	</insert>
+	
+	<!-- 좋아요 삭제 -->
+	<delete id="deleteGood">
+		DELETE FROM tbl_good WHERE memberId=#{memberId} AND bno=#{bno};
+	</delete>
+	
+	<!-- 좋아요 눌렀는가 안 눌렀는가 -->
+	<select id="selectGood" resultType="int">
+		SELECT COUNT(*) FROM tbl_good WHERE memberId=#{memberId} AND bno=#{bno};
+	</select>
+	
+	<!-- tbl_board 좋아요 업데이트 -->
+	<update id="updateGood">
+		UPDATE tbl_board
+		SET good=(SELECT COUNT(*) FROM tbl_good WHERE bno=#{bno})
+		WHERE bno=#{bno}
+	</update>
+	
+	<!-- 해당 게시글 좋아요 총 개수 확인 -->
+	<select id="getGoodCnt" resultType="int">
+		SELECT COUNT(*) FROM tbl_good WHERE bno=#{bno}
+	</select>
+</mapper>

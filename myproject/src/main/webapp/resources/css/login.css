@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222;
+    overflow: hidden;
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-9/cur817.cur"), auto;
+    overflow: auto;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hide{
+    display: block; /* span 태그라면 */
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+fieldset{
+    border: 0;
+}
+
+legend{
+    display: none;
+}
+
+input, select, textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+input{
+    font-family: 'Noto Sans KR', sans-serif;
+    vertical-align: top;
+    line-height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+select{
+    height: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0 2px;
+}
+
+textarea{
+    resize: none;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* reset end */
+
+.main{
+    padding: 100px 0 50px 0;
+    margin: 0 20px;
+}
+
+h2{
+    padding-bottom: 50px;
+    line-height: 1em;
+    font-size: 35px;
+    text-align: center;
+}
+
+.id{
+    border-bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.password{
+    margin-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+label.check{
+    color: #444;
+}
+
+.check{
+    width: auto;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
+
+.loginBtn{
+    margin-bottom: 10px;
+}
+
+.user_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_info ul{
+    display: flex;
+}
+
+.user_info li{
+    display: flex;
+}
+
+.user_info a{
+    color: #333;
+}
+
+.user_info li::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 10px;
+    margin: 5px 10px;
+    background-color: #444;
+}
+
+.user_info li:first-child::before{
+    display: none;
+}
+
+@media screen and (min-width: 425px) {
+    .main{
+        width: 382px;
+        margin: 0 auto;
+    }
+}

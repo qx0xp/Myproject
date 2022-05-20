@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mymy.dao.MainDAO">
+	<!-- 인기글 불러오기 -->
+	<select id="boardList" resultType="org.mymy.model.BoardDTO">
+	select *
+	from (select @rownum:=@rownum+1 as rownum, b.*
+			from (select @rownum:=0) as tmp, tbl_board b
+			order by good desc, bno desc) as boardList
+	<![CDATA[
+	where rownum>(#{pageNum}-1)*#{amount} and rownum<=#{pageNum}*#{amount}
+	]]>
+	</select>
+	
+	<!-- 영화 소식 목록 -->
+	<select id="newsList" resultType="org.mymy.model.BoardDTO">
+	select *
+	from (select @rownum:=@rownum+1 as rownum, b.*
+			from (select @rownum:=0) as tmp, tbl_board b
+			where bgno='2'
+			order by good desc, bno desc) as boardList
+	<![CDATA[
+	where rownum>(#{pageNum}-1)*#{amount} and rownum<=#{pageNum}*#{amount}
+	]]>
+	</select>
+	
+	<!-- 영화 수다 목록 -->
+	<select id="talkList" resultType="org.mymy.model.BoardDTO">
+	select *
+	from (select @rownum:=@rownum+1 as rownum, b.*
+			from (select @rownum:=0) as tmp, tbl_board b
+			where bgno='4'
+			order by good desc, bno desc) as boardList
+	<![CDATA[
+	where rownum>(#{pageNum}-1)*#{amount} and rownum<=#{pageNum}*#{amount}
+	]]>
+	</select>
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mymy.dao.AttachFileDAO">
+	<!-- 첨부파일 업로드 -->
+	<insert id="addBoardAttach">
+		INSERT INTO tbl_attach(fileName, uploadPath, uuid, image, bno)
+		VALUES(#{fileName}, #{uploadPath}, #{uuid}, #{image}, #{bno})
+	</insert>
+	
+	<!-- 첨부파일 삭제 -->
+	<delete id="removeBoardAttach">
+		DELETE FROM tbl_attach WHERE bno=#{bno}
+	</delete>
+</mapper>

@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 20px;
+    color: #222;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-9/cur817.cur"), auto;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    font-family: 'Noto Sans KR', sans-serif;
+    vertical-align: top;
+}
+
+.hide{
+    display: block; /* span 태그라면 */
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+fieldset{
+    border: 0;
+}
+
+legend{
+    display: none;
+}
+
+/* reset end */
+
+
+#wrap{
+    position: relative;
+    width: 100%;
+}
+
+.content{
+    width: 740px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.delete_title{
+    padding: 30px 0;
+    font-size: 24px;
+    line-height: 1em;
+    text-align: center;
+    border-bottom: 2px solid #666;
+}
+
+.delete_memo{
+    padding: 30px 0;
+    border-bottom: 1px dashed #ccc;
+    color: #666;
+}
+
+.delete_area{
+    margin-bottom: 20px;
+    padding: 30px 0;
+    border-bottom: 2px solid #666;
+}
+
+.delete_area li{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.delete_item{
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.delete_value input{
+    height: 35px;
+    line-height: 35px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.delete_option input{
+    padding: 0 10px;
+    margin: 0 3px;
+    height: 35px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.delete_option .deleteBtn{
+    color: #fff;
+    background-color: #222;
+}
+
+.delete_msg{
+    border-top: 1px dashed #666;
+    margin: 30px 0;
+    padding: 30px 0;
+    color: red;
+    background-color: rgb(255, 252, 238);
+}

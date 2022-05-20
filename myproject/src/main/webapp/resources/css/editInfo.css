@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 20px;
+    color: #222;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-9/cur817.cur"), auto;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    font-family: 'Noto Sans KR', sans-serif;
+    vertical-align: top;
+}
+
+.hide{
+    display: block; /* span 태그라면 */
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+fieldset{
+    border: 0;
+}
+
+legend{
+    display: none;
+}
+
+/* reset end */
+
+#wrap{
+    position: relative;
+    width: 100%;
+}
+
+.content{
+    width: 740px;
+    margin: 0 auto;
+}
+
+.profile_title{
+    padding: 30px 0;
+    font-size: 24px;
+    line-height: 1em;
+    text-align: center;
+}
+
+.profile_header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 150px;
+    border-top: 2px solid #666;
+    border-bottom: 1px dashed #ccc;
+}
+
+.pro_img{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 50%;
+}
+
+.profile_area{
+    margin-bottom: 20px;
+}
+
+.profile_area li{
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    color: #999;
+}
+
+.profile_area li:last-child{
+    border-bottom: 2px solid #666;
+}
+
+.profile_area input{
+	height: 30px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.pro_item{
+	margin-right: 10px;
+	line-height: 30px;
+}
+
+.pro_detail{
+	line-height: 30px;
+	color: #444;
+}
+
+.profile_option{
+    text-align: center;
+}
+
+.profile_option input{
+    padding: 0 10px;
+    margin: 0 3px;
+    height: 35px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.profile_option .pro_editBtn{
+    background-color: #000;
+    color: #fff;
+}
+
+.msg{
+    margin-top: 10px;
+    color: red;
+}

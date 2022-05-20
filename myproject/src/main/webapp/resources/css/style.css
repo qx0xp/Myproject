@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    /* 인라인 블럭 : img, input */
+    font-family: 'Noto Sans KR', sans-serif;
+    vertical-align: top;
+}
+
+.hide{
+    display: block; /* span 태그라면 */
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+fieldset{
+    border: 0;
+}
+
+legend{
+    display: none;
+}
+
+/* reset end */
+
+#wrap{
+    position: relative;
+    width: 100%;
+}
+
+/* header */
+
+#header{
+    position: relative;
+    height: 60px;
+    background-color: #fff;
+}
+
+#headerIn{
+    height: 60px;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo a{
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    color: #000;
+    font-size: 20px;
+}
+
+.util .h_login{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    text-indent: -99999px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/h_login.png");
+    background-size: 20px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.util .h_mypage{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    text-indent: -99999px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/h_mypage.png");
+    background-size: 20px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.util .h_logout{
+    position: absolute;
+    left: 55px;
+    top: 15px;
+    text-indent: -99999px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/h_logout.png");
+    background-size: 20px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.util ul{
+    margin-right: 15px;
+    margin-top: 15px;
+    float: right;
+    display: flex;
+}
+
+.util ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.util li{
+    margin-left: 5px;
+}
+
+.util li a{
+    color: #222;
+}
+
+.util li>a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: 20px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+}
+
+.util .h_search a{background-image: url("../img/h_search.png");}
+.util .h_login a{background-image: url("../img/h_login.png");}
+.util .h_menu a{background-image: url("../img/h_menu.png");}
+
+/* container */
+
+/* main1 */
+
+.main1{
+    margin-bottom: 40px;
+}
+
+.slick-list{
+    position: relative;
+}
+
+.slick-dots{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.slick-dots li>button{
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 0 13px;
+    border-radius: 50%;
+    border: 0;
+    background-color: (255,255,255);
+    opacity: 0.4;
+    text-indent: -99999px;
+    box-shadow: 0 0 2px #222;
+}
+
+.slick-dots li.slick-active>button{
+    opacity: 0.8;
+}
+
+/* main2 */
+
+.main2{
+	width: 1000px;
+    margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.list_header{
+	margin-bottom: 10px;
+	line-height: 1.3em;
+	font-size: 15px;
+}
+
+.list_area{
+    margin-bottom: 20px;
+    border-top: 2px solid #555;
+    border-bottom: 2px solid #555;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    color: #444;
+    text-align: center;
+}
+
+.list_area li{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list_area li:last-child{
+    border-bottom: none;
+}
+
+.list_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_content .board_title{
+	text-align: left;
+}
+
+.list_content .board_good{
+	padding-left: 20px;
+	background-image: url('../../resources/img/good.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.list_content .board_title a{
+	color: #444;
+}
+
+/* main3 */
+
+.main3{
+	display: flex;
+	justify-content: space-between;
+	width: 1000px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.list_box{
+	width: 490px;
+}
+
+/* footer */
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #eee;
+    background-image: url('../../resources/img/top.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -99999px;
+}
+
+/* side */
+
+.side{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #eee;
+    z-index: 600;
+}
+
+.side_close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.side_close a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/side_close.png");
+    background-size: 100% auto;
+    text-indent: -99999px;
+}
+
+.side_box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side_box ul::before{
+    content: '';
+    display: block;
+    width: 30%;
+    height: 10px;
+    background-color: #222;
+}
+
+.side_box ul{
+    margin: 20px 0;
+}
+
+.side li{
+    margin: 10px 0;
+}
+
+.side li a{
+    color: #222;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+.side li a:hover{
+    text-decoration: line-through;
+    color: rgb(155, 9, 9)
+}
+
+/* 메모 
+1. CSS에서: 항상 "url"
+2. HTML에서
+1) link인 경우: "href"
+2) link가 아닌 경우(이미지, 비디오 등등): "src"*/

@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222;
+    overflow: hidden;
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-9/cur817.cur"), auto;
+    overflow: auto;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    
+    height: auto;
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hide{
+    display: block; /* span 태그라면 */
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+fieldset{
+    border: 0;
+}
+
+legend{
+    display: none;
+}
+
+input, select, textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+input{
+    font-family: 'Noto Sans KR', sans-serif;
+    vertical-align: top;
+    line-height: 40px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+select{
+    height: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 0 2px;
+}
+
+textarea{
+    resize: none;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* reset end */
+
+/* mobile */
+.main{
+    position: relative;
+    padding: 50px 0;
+    margin: 0 20px;
+}
+
+.main h2{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #222;
+    font-size: 28px;
+}
+
+.mainForm table{
+    width: 100%;
+}
+
+.mainForm select{
+    margin-bottom: 5px;
+}
+
+.mainForm input{
+    margin-bottom: 5px;
+}
+
+.mainForm .uploadFile{
+    border: 0;
+    padding: 0;
+}
+
+.b_uploadBtn, .cancelBtn{
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+.b_uploadBtn{
+	right: 0;
+}
+
+.cancelBtn{
+	left: 0;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #000;
+}
