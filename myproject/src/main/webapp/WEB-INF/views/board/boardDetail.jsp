@@ -14,9 +14,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 
-<!-- css -->
-<link rel="stylesheet" href="../../resources/css/boardDetail.css">
-
 <!-- jquery -->
 <script src="../../resources/js/jquery.js"></script>
 
@@ -28,10 +25,11 @@
 <script src="../../resources/js/bootstrap.js"></script>
 <link rel="stylesheet" href="../../resources/css/bootstrap.css">
 
+<!-- css -->
+<link rel="stylesheet" href="../../resources/css/boardDetail.css">
 </head>
 <body>
 	<div id="wrap">
-		<%@include file="../header.jsp" %>
     	<div class="content">
             <h2>${bdetail.title}</h2>
             <div class="board_area">
