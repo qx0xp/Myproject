@@ -5,12 +5,17 @@
     padding: 0;
 }
 
+html{
+	height: 100%;
+}
+
 body{
+	height: 100%;
     line-height: 20px;
     color: #222;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 13px;
-    cursor: url("https://cur.cursors-4u.net/cursors/cur-9/cur817.cur"), auto;
+    overflow-x: hidden;
 }
 
 ul, ol{
@@ -58,6 +63,7 @@ legend{
 #wrap{
     position: relative;
     width: 100%;
+    min-height: 100%;
 }
 
 .content{
@@ -65,7 +71,7 @@ legend{
     margin: 0 auto;
 }
 
-h2{
+.content h2{
     margin: 20px 20px 10px 20px;
     padding-bottom: 20px;
     border-bottom: 1px dashed #ccc;

@@ -19,10 +19,10 @@
 <!-- js -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="../resources/js/boardList.js"></script>
-
 </head>
 <body>
 	<div id="wrap">
+		<%@include file="../header.jsp" %>
 		<div class="content">
 			<c:choose>
 				<c:when test="${paging.cri.bgno==null}"><h2>전체글 보기</h2></c:when>
@@ -87,7 +87,8 @@
 					<a class="next" href="/board?bgno=${paging.cri.bgno}&type=${paging.cri.type}&keyword=${paging.cri.keyword}&pageNum=${paging.endPage+1}&amount=${paging.cri.amount}">NEXT</a>
 				</c:if>
 			</div>
-		</div>
-	</div>
+		</div> <!-- #content -->
+		<%@include file="../footer.jsp" %>
+	</div> <!-- #wrap -->
 </body>
 </html>

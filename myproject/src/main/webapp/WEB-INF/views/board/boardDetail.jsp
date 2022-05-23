@@ -31,6 +31,7 @@
 </head>
 <body>
 	<div id="wrap">
+		<%@include file="../header.jsp" %>
     	<div class="content">
             <h2>${bdetail.title}</h2>
             <div class="board_area">
@@ -106,6 +107,7 @@
                 </div>
              </div> <!-- .modal -->
         </div> <!--.content-->
+        <%@include file="../footer.jsp" %>
     </div>
     <!-- 좋아요 -->
 	<script>

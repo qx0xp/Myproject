@@ -1,12 +1,4 @@
 $(function(){
-    // slick
-    $('.slides').slick({
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        dots: true
-    })
-    
     // 메뉴 버튼 클릭하면 side 보이기
     $(".h_menu").on("click", function(e){
         //스크롤 막기

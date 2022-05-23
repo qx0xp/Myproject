@@ -1,10 +1,17 @@
 @charset "utf-8";
+
 *{
     margin: 0;
     padding: 0;
 }
 
+html{
+	height: 100%;
+}
+
 body{
+	height: 100%;
+	overflow-x: hidden;
     line-height: 20px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 13px;
@@ -51,22 +58,22 @@ input{
 
 /* reset end */
 
-.wrap{
+#wrap{
     position: relative;
     width: 100%;
+    min-height: 100%;
+    padding-bottom: 40px;
 }
 
-.content{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    width: 425px;
+#content{
+	width: 400px;
+	margin: 0 auto;
 }
 
 h2{
-    margin: 50px 0 20px;
+    margin: 20px 0 20px;
     line-height: 1em;
-    font-size: 40px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -77,7 +84,6 @@ h3{
 .box{
     padding: 10px;
     box-sizing: border-box;
-    /* background-color: #eee; */
 }
 
 .int{
@@ -91,13 +97,13 @@ h3{
 }
 
 .btn_area{
-    margin: 20px 0 20px;
+    margin: 10px 0 10px;
 }
 
 .btn{
     width: 100%;
     height: 40px;
-    border: 0;
+    border: none;
     background-color: #ccc;
 }
 

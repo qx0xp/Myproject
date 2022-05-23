@@ -25,7 +25,7 @@
 	<div id="wrap">
 		<header id="header">
             <div id="headerIn">
-                <h1 class="logo"><a href="#">In the mood for Movies</a></h1>
+                <h1 class="logo"><a href="/main">In the mood for Movies</a></h1>
                 <div class="util">
                 	<c:if test="${login==null}"><a href="/login" class="h_login">login</a></c:if>
                     <c:if test="${login!=null}">
@@ -33,7 +33,6 @@
                         <a href="/logout" class="h_logout">로그아웃</a>
                     </c:if>
                     <ul>
-                        <li class="h_search"><a href="#">search</a></li>
                         <li class="h_menu"><a href="#">menu</a></li>
                     </ul>
                 </div>

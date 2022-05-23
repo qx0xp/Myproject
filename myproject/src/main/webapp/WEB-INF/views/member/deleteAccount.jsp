@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="wrap">
+    	<%@include file="../header.jsp" %>
 		<div class="content">
 		    <h2 class="delete_title">회원탈퇴</h2>
             <div class="delete_memo">
@@ -42,6 +43,7 @@
 	            </div>
             </c:if>
 		</div>
+		<%@include file="../footer.jsp" %>
 	</div>
 </body>
 </html>

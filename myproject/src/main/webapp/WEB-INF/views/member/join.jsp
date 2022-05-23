@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +11,10 @@
 <script type="text/javascript" src="../resources/js/join.js"></script>
 </head>
 <body>
-    <div class="wrap">
+    <div id="wrap">
+    	<%@include file="../header.jsp" %>
 		<h2>JOIN</h2>
-		<div class="content">
+		<div id="content">
             <form action="/join" id="joinForm" method="post">
                 <div class="box">
                     <h3><label for="id">아이디</label></h3>
@@ -63,6 +65,7 @@
                 </div>
             </form>
         </div>
+        <%@include file="../footer.jsp" %>
 	</div>
 </body>
 </html>
